@@ -1,2 +1,2 @@
 # Python-Programming-in-NTHU
-including web application and some AI algorithm 
+including web application, ML application, stock Caculating
