@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>跳轉頁面</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+        background-color: #F3EBF6;
+        font-family: Noto Sans TC;
+    }
+    
+    .main {
+        background-color: #FFFFFF;
+        width: 400px;
+        height: 300px;
+        margin: 2em auto;
+        border-radius: 1.5em;
+        box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+    }
+    
+    .sign {
+        padding-top: 40px;
+        color: #8C55AA;
+        font-family: Noto Sans TC;
+        font-weight: bold;
+        font-size: 23px;
+    }
+
+    .submit {
+      cursor: pointer;
+        border-radius: 5em;
+        color: #fff;
+        background: linear-gradient(to right, #9C27B0, #E040FB);
+        border: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        font-family: Noto Sans TC;
+        margin-left: 36%;
+        font-size: 13px;
+        box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+    }
+
+    a {
+        text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+        color: #E1BEE7;
+        margin-bottom: 40px;
+        text-decoration: none
+    }
+    p {
+    line-height:42px;
+    }
+
+    
+    @media (max-width: 600px) {
+        .main {
+            border-radius: 0px;
+        }
+    </style>
+
+</head>
+<body>
+    <br>
+    <p class="sign" align="center">膚質測驗結果:你是非油性缺水的肌膚，在選擇保養品部分應著重補水的部分。因此我們會推薦你使用乳液。</p>
+
+    <div class="main">
+        <form method='post' action={{ url_for('transform_4') }}> 
+        <p class="sign" align="center">請選擇你想購買產品的網站</p>
+    
+        <p>
+            <a class="submit" align="center" style="font-family: Noto Sans TC" onclick="href='https://www.watsons.com.tw/search?text=%E4%B9%B3%E6%B6%B2'">屈臣氏</a>
+            <br>
+        </p>
+        <p>
+            <a class="submit" align="center" style="font-family: Noto Sans TC" onclick="href='https://shop.cosmed.com.tw/v2/Search?shopId=2131&q=%E4%B9%B3%E6%B6%B2'">康是美</a>
+            <br>
+        </p>
+        <p>
+            <a class="submit" align="center" style="font-family: Noto Sans TC" onclick="href='https://www.s3.com.tw/TC/PDlist2.aspx?keyword=%E4%B9%B3%E6%B6%B2&u=t&kw=%E4%B9%B3%E6%B6%B2&pi=0'">小三美日</a>
+            <br>
+        </p>
+    </div>
+        <p>
+            <h3 align="center">{{word}}</h3>
+            <br>
+            <br>
+            <br>
+        </p>       
+        </form>
+
+</body>
+</html>
+
