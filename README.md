@@ -1,2 +1,3 @@
 # Python-Programming-in-NTHU
-including web application, ML application, stock Caculating
+This my programming project conducted in NTHU.
+Including web application, ML application, web crawler, and stock caculating:)
