@@ -103,10 +103,10 @@ check_start = 0    #有沒有找到開盤日
 check_end = 0    #有沒有找到收盤日
 
 for i in range(0, len(date_list)):
-    if check_start == 0 and start_date == date_list[i]:    #如果還沒有找到開盤日，然後在list裡面發現開盤日，就把他的位置記下來，然後變成1，代表他已經找到ㄌ
+    if check_start == 0 and start_date == date_list[i]:    #如果還沒有找到開盤日，然後在list裡面發現開盤日，就把他的位置記下來，然後變成1，代表他已經找到
         start_idx = i                                      #start_idx和end_idx是代表最後的日期要抓哪些區間
         check_start = 1
-    elif check_end == 0 and end_date == date_list[i]:      #如果還沒找到收盤日，然後在list裡面發現開盤日，就把他的位置記下來，然後變成1，代表他已經找到ㄌ
+    elif check_end == 0 and end_date == date_list[i]:      #如果還沒找到收盤日，然後在list裡面發現開盤日，就把他的位置記下來，然後變成1，代表他已經找到
         check_end = 1                                       
         end_idx = i + 1
         break
